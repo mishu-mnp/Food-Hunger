@@ -1,0 +1,285 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 500px;
+}
+
+
+/* Navigation Bar: Logo and Images */
+#logo{
+    margin: 20px 30px;
+}
+
+#logo img{
+    margin: 2px 4px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* Navigation Bar: Lists Styling */
+#navbar ul{
+    display: flex;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    /* background-color: grey; */
+    padding: 3px 40px;
+    margin: 10px 30px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 12px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 240px;
+}
+
+#home::before{
+    content: "";
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 320px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.2;
+    padding-top: 100px;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 20px;
+}
+
+#services .box{
+    border: 3px solid purple;
+    margin: 10px;
+    padding: 10px 8px;
+    border-radius: 40px;
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Client Section */
+#client-section{
+    height: 450px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg');
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 1.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 100px;
+    padding: 12px;
+    margin: 100px auto;
+    opacity: 1.5;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('/img/contact-us.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    opacity: 1.2;
+    margin-top: 80px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-top: 35px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    margin: 0.4rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    padding-left: 15px;
+}
+
+#contact-box form{
+    width: 35%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px 20px;
+    margin: 120px auto;
+}
+
+/* Utility Classes */
+.h-primary-services{
+    font-size: 2.8rem;
+    padding: 20px auto;
+    margin-top: 80px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 20px auto;
+    /* margin-top: 5px; */
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 1px 10px;
+    margin-top: 40px;
+}
+
+
+/* Button */
+.btn{
+    padding: 5px 15px;
+    border: 3px solid white;
+    background-color: rgb(235, 105, 217);
+    margin: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.submitBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    color: black;
+    background-color: rgb(197, 40, 40);
+    border: 3px solid purple;
+    margin: 10px auto;
+    padding: 4px 160px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.searchBar{
+    margin: 8px 8px;
+    padding: 5px 45px;
+    /* border: 3px solid black; */
+    border-radius: 23px;
+    background-color: rgb(230, 221, 221);
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-left: 250px;
+}
+
+#searchBtn{
+    color: #060938;
+    margin: 8px 8px;
+    background-color: #f1ac4d;
+    padding: 9px 20px;
+    font-size: 15px;
+    border: 3px solid purple;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.center{
+    text-align: center;
+}
